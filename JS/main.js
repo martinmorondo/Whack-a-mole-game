@@ -2,6 +2,7 @@ const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 const btn = document.getElementById('btn');
+const restartBtn = document.getElementById('btn-restart');
 
 let score = 0;
 let lastHole;
@@ -56,4 +57,13 @@ function bonk(e) {
 };
 
 moles.forEach(mole => mole.addEventListener('click', bonk));
+
+restartBtn.addEventListener('click', () => {
+  // Restart the game.
+  // ...
+  
+  // Refresh the screen.
+  location.reload();
+});
+
 
