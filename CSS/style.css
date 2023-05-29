@@ -46,16 +46,16 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 5rem;
-    -webkit-tap-highlight-color: transparent;
-    background-color: #000;
-    background-image: none;
-    color: #fff;
-    cursor: pointer;
-    font-family: ui-sans-serif, system-ui;
-    font-size: 100%;
-    font-weight: 900;
-    line-height: 1.5;
-    padding: 0;
+        -webkit-tap-highlight-color: transparent;
+        background-color: #000;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui;
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 1.5;
+        padding: 0;
     }
 
     .btn-45:disabled {
@@ -124,18 +124,18 @@ html {
       box-sizing: border-box;
     }
     .btn-25 {
-        margin-left: 10px;
-        position: absolute;
-        top: 50%;
-        left: 0%;
+      margin-left: 10px;
+      position: absolute;
+      top: 50%;
+      left: 0%;
       -webkit-tap-highlight-color: transparent;
       background-color: #000;
       background-image: none;
       color: #fff;
       cursor: pointer;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+          Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
       font-size: 100%;
       font-weight: 900;
       line-height: 1.5;
@@ -211,8 +211,6 @@ html {
       );
     }
      
-
- 
   .score {
     background: #96988d6d;
     padding: 0 3rem;
@@ -260,3 +258,56 @@ html {
   .hole.up .mole {
     top: 0;
   }
+
+  .timer {
+    background-color:#96988d6d;
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 25px;
+  }
+
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .score {
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  
+    .btn-45,
+    .btn-25 {
+      width: auto;
+      padding: 0.5rem 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .timer {
+      font-size: 3rem;
+      margin: 2rem;
+    }
+
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .hole {
+      width: 25%;
+    }
+  }
+  
